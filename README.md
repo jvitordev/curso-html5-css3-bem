@@ -1,7 +1,7 @@
 <h1 align="center">Oi 👋, Me chamo João Vitor</h1>
 <h3 align="center">Sou estudante de tecnologias para web</h3>
 <br>
-- 🌱 Atualmente estou estudando o curso <strong>Web Design Responsivo com HTML5 , CSS3 e BEM da Algaworks</strong>
+- 🌱 Este é o repositório do curso <strong>Web Design Responsivo com HTML5 , CSS3 e BEM da Algaworks</strong>
 
 <br><br>
 <h3 align="left">Idiomas e ferramentas:</ h3>
