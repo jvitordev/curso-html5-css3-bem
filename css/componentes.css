@@ -58,7 +58,8 @@
   background-color: #c20303;
   color: #fff;
 
-  font-size: 0.7142em; /* 10px */
+  font-size: 0.7142em;
+  /* 10px */
   line-height: 2.5;
 
   content: "MAIS POPULAR";
@@ -88,12 +89,15 @@
   text-decoration: none;
 }
 
-.botao--assinar, .botao--login {
+.botao--assinar,
+.botao--login {
   background-color: #127d00;
 }
 
 .botao--assinar:hover,
-.botao--assinar:focus, .botao--login:hover, .botao--login:focus {
+.botao--assinar:focus,
+.botao--login:hover,
+.botao--login:focus {
   background-color: #0e6400;
 }
 
@@ -145,8 +149,7 @@
     padding-left: 10%;
     padding-right: 10%;
 
-    font-size: 2.2rem;
-    /* 2.2 * 10px = 22px */
+    font-size: 2.2rem; /* 2.2 * 10px = 22px */
   }
 }
 
@@ -154,7 +157,8 @@
   DEPOIMENTO
 \*--------------------*/
 .depoimento {
-  font-size: 2.2rem; /* 22px */
+  font-size: 2.2rem;
+  /* 22px */
 }
 
 @media(min-width: 992px) {
@@ -176,14 +180,15 @@
   font-size: 1em;
 }
 
-.depoimento > blockquote::before {
+.depoimento>blockquote::before {
   position: absolute;
   left: 0;
   top: -0.35em;
 
   color: #ccc;
 
-  font-size: 8em; /* 176px */
+  font-size: 8em;
+  /* 176px */
 
   content: "\201C";
 }
@@ -206,8 +211,7 @@
 /*--------------------*\
   NAVEGACAO
 \*--------------------*/
-.navegacao {
-}
+.navegacao {}
 
 .navegacao__menu {
   float: right;
@@ -236,30 +240,55 @@
 /*--------------------*\
   MENU
 \*--------------------*/
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
 
-  width: 200px;
+.menu {
   margin: 0;
-  padding: 20px;
-  border-right: 1px solid #eee;
 
   font-size: 1.4rem;
-
-  background-color: #fbfbfb;
 
   list-style: none;
 }
 
-.menu__item {
-  display: block;
+@media(max-width: 991px) {
 
-  line-height: 3;
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #eee;
+
+    background-color: #fbfbfb;
+  }
+
+  .menu--exibindo {
+    display: block;
+  }
+
+  .menu__item {
+    display: block;
+
+    line-height: 3;
+  }
+
+  .menu__item--botao {
+    margin-top: 20px;
+  }
+
 }
 
-.menu__item--botao {
-  margin-top: 20px;
+@media(min-width: 992px) {
+
+  .menu__item {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .menu__item:last-of-type {
+    padding-right: 0px;
+  }
 }
