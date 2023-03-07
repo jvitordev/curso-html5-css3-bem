@@ -43,4 +43,8 @@
     .layout-planos .row > div:not(:last-child) {
         margin-bottom: 40px;
     }
-}  
+} 
+
+.layout-assinatura {
+    padding: 40px 0;
+  }
